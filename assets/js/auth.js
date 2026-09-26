@@ -124,7 +124,7 @@
   // Same sitekey as the previous site (public). Missing/blocked widget = the server
   // lets the request through (fail-open), so sign-in never locks on the captcha.
 
-  window.NEXTENDO_TURNSTILE_SITEKEY = "0x4AAAAAAD7S4rKlUZb5jrS1";
+  window.NEXTENDO_TURNSTILE_SITEKEY = ""; // local stack: no Cloudflare captcha (its key only works on nextendo.network)
   window.__nxTsToken = "";
   window.nxTurnstileOnload = function () {
     if (window.NEXTENDO_TURNSTILE_SITEKEY && window.turnstile && $("ts")) {
